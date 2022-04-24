@@ -7,13 +7,13 @@
 
 - **语法转换**
 
-  ```
+  ```javascript
   把ES6的箭头函数语法转换成了ES5的函数定义语法。 箭头函数语法、async函数语法、class定义类语法和解构赋值等等都是ES6新增的语法,因为Babel默认只转换新的JavaScript语法（syntax），而不转换新的 API。  例如Bable01
   ```
 
 - **补齐API**
 
-  ```
+  ```javascript
   通过 Polyfill 的方式在目标环境中添加缺失的特性 。新的API分类两类，一类是Promise、Map、Symbol、Proxy、Iterator等全局对象及其对象自身的方法，例如Object.assign，Promise.resolve；另一类是新的实例方法，例如数组实例方法[1, 4, -5, 10].find((item) => item < 0) , API转换需要引入polyfill。示例Bable02 
   ```
 
